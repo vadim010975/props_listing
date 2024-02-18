@@ -6,7 +6,7 @@ interface ListingProps {
   items: Array<ItemInterface>
 }
 
-const Listing: FC<ListingProps> = ({ items }) => {
+const Listing: FC<ListingProps> = ({ items = [] }) => {
 
   return (
     <div className="item-list">
